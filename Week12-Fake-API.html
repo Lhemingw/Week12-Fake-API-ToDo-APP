@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOCK API--TO DO APP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOCK API--TO DO APP</title> 
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"/>
+  <link rel="style.css">
+      
+      
 </head>
 <body>
-    
+<!--fetch('https://exampleapi.com/data', {
+  method: 'GET',
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch((error) => console.error('Error:', error));-->
+<!---The div with an id addNew is the button that will open the modal. 
+The span will be displayed on the button. The i is the icon from font-awesome.-->
+  <div class="app">
+    <h4 class="mb-3">TODO App</h4>
+  
+    <div id="addNew" data-bs-toggle="modal" data-bs-target="#form">
+      <span>Add New Task</span>
+      <i class="fas fa-plus"></i>
+    </div>
+  <!-- Modal -->
+<form
+class="modal fade"
+id="form"
+tabindex="-1"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Add New Task</h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="modal-body">
+      <p>Task Title</p>
+      <input type="text" class="form-control" name="" id="textInput" />
+      <div id="msg"></div>
+      <br />
+      <p>Due Date</p>
+      <input type="date" class="form-control" name="" id="dateInput" />
+      <br />
+      <p>Description</p>
+      <textarea
+        name=""
+        class="form-control"
+        id="textarea"
+        cols="30"
+        rows="5"
+      ></textarea>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+        Close
+      </button>
+      <button type="submit" id="add" class="btn btn-primary">Add</button>
+    </div>
+  </div>
+</div>
+</form>
+
+<!---TOWARDS THE END 2 ENDING DIV/END BODY-->
+<h5 class="text-center my-3">Tasks</h5><!--To see the created tasks, we'll use a div with an id tasks, 
+  inside the div with the classname app. --->
+
+    <div id="tasks">
+
+    </div>
+  </div>
+  
+
+ <script src="Week12-Fake-API.js" ></script> 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ 
 </body>
 </html>
