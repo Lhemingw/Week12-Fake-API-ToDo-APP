@@ -1,19 +1,38 @@
 {
-  "posts": [
+  "studentRoster": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "fullName": "Ora Thiel",
+      "researchAssignment": "bear",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "fullName": "Tabitha Brown",
+      "researchAssignment": "rabbit",
+      "id": 2
+    },
+    {
+      "fullName": "Patti Fritsch",
+      "researchAssignment": "fish",
+      "id": 3
+    },
+    {
+      "fullName": "Mr. Tyrone Ziemann II",
+      "researchAssignment": "cat",
+      "id": 4
+    },
+    {
+      "fullName": "Tammy Kunde",
+      "researchAssignment": "bird",
+      "id": 5
+    },
+    {
+      "fullName": "sdfsd",
+      "id": 6
+    },
+    {
+      "fullName": "Lucinda",
+      "researchAssignment": "Desert Willow",
+      "id": 7
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

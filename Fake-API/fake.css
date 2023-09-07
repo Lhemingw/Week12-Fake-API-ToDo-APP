@@ -1,0 +1,16 @@
+body{
+    background-color: blanchedalmond;
+}
+
+h4{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, uppercase;
+    background-image: linear-gradient(to left, #553c9a, #b393d3);
+    text-shadow: 0px 6px 10px rgba(179, 147, 211, 0.8)
+
+}
+thead{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-stretch: 3em; 
+    font-style: italic;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Task Manager</h1>
+        <form id="task-form">
+            <div class="input-group mb-3">
+                <input type="text" id="task-title" class="form-control" placeholder="Add a new task" required>
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="submit">Add</button>
+                </div>
+            </div>
+        </form>
+        <ul id="task-list" class="list-group">
+            <!-- Tasks will be displayed here -->
+        </ul>
+    </div>
+    <!-- Edit Task Modal -->
+<div class="modal fade" id="editTaskModal" tabindex="-1" role="dialog" aria-labelledby="editTaskModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editTaskModalLabel">Edit Task</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="edit-task-form">
+                <div class="modal-body">
+                    <input type="hidden" id="edit-task-id">
+                    <div class="form-group">
+                        <label for="edit-task-title">Title</label>
+                        <input type="text" class="form-control" id="edit-task-title" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+<!--<!With these changes, your application should have CRUD functionality for tasks, including the ability to edit and update them through the modal. Ensure that your server and frontend are running concurrently to test the complete functionality.
+
+
+
+
+
+    
+</body>
+</html>

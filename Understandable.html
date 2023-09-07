@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Task Manager</h1>
+        <form id="task-form">
+            <div class="input-group mb-3">
+                <input type="text" id="task-title" class="form-control" placeholder="Add a new task" required>
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="submit">Add</button>
+                </div>
+            </div>
+        </form>
+        <ul id="task-list" class="list-group">
+            <!-- Tasks will be displayed here -->
+        </ul>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="under-app.js"></script>
+    <script src="Understandable.js"></script>
+</body>
+</html>

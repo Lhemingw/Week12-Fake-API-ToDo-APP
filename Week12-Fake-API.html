@@ -12,18 +12,47 @@
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"/>
+
+      <!-- Edit Task Modal -->
+<div class="modal fade" id="editTaskModal" tabindex="-1" role="dialog" aria-labelledby="editTaskModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="editTaskModalLabel">Edit Task</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <form id="edit-task-form">
+              <div class="modal-body">
+                  <input type="hidden" id="edit-task-id">
+                  <div class="form-group">
+                      <label for="edit-task-title">Title</label>
+                      <input type="text" class="form-control" id="edit-task-title" required>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Save Changes</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+
   <link rel="style.css">
       
       
 </head>
 <body>
+
 <!--fetch('https://exampleapi.com/data', {
   method: 'GET',
 })
 .then(response => response.json())
 .then(data => console.log(data))
-.catch((error) => console.error('Error:', error));-->
-<!---The div with an id addNew is the button that will open the modal. 
+.catch((error) => console.error('Error:', error));
+The div with an id addNew is the button that will open the modal. 
 The span will be displayed on the button. The i is the icon from font-awesome.-->
   <div class="app">
     <h4 class="mb-3">TODO App</h4>
@@ -51,7 +80,7 @@ aria-hidden="true"
         aria-label="Close"
       ></button>
     </div>
-    <div class="modal-body">
+    <div class="modal-body table">  <!--***-->
       <p>Task Title</p>
       <input type="text" class="form-control" name="" id="textInput" />
       <div id="msg"></div>
@@ -70,8 +99,7 @@ aria-hidden="true"
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-        Close
-      </button>
+        Close</button>
       <button type="submit" id="add" class="btn btn-primary">Add</button>
     </div>
   </div>

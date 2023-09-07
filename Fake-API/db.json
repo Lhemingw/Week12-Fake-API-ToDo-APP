@@ -1,0 +1,21 @@
+{
+  "studentRoster": [
+    {
+      "fullName": "sdfsd",
+      "id": 1
+    },
+    {
+      "fullName": "Lucinda",
+      "id": 2
+    },
+    {
+      "fullName": "asdf",
+      "id": 3
+    },
+    {
+      "fullName": "asdf",
+      "researchAssignment": "asdf",
+      "id": 4
+    }
+  ]
+}
